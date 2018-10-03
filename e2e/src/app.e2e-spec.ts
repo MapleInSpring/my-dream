@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display dream message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to my-dream-app!');
+    expect(page.getParagraphText()).toEqual('I have a dream!');
   });
 });
