@@ -1,6 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    I have a dream!
+    I have a dream! {{title}}
   </h1>
+  <input [(ngModel)]="title" type="text" id="dream-input">
+  <h2>
+    I want to achieve my dream by {{achieveDream}}
+  </h2>
+  <input [(ngModel)]="achieveDream" type="text" id="achieve-dream-input">
+  <h3>
+    Achieve Dream Checkbox {{achieveCheckbox}}
+  </h3>
+  <input [(ngModel)]="achieveCheckbox" type="checkbox" id="achieve-check-dream-input">
 </div>
