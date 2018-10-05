@@ -1,14 +1,14 @@
 <div style="text-align:center">
   <h1>
-    I have a dream! {{title}}
+    I have a dream! {{title.value}}
   </h1>
-  <input [(ngModel)]="title" type="text" id="dream-input">
+  <input [formControl]="title" type="text" id="dream-input">
   <h2>
-    I want to achieve my dream by {{achieveDream}}
+    I want to achieve my dream by {{achieveDream.value}}
   </h2>
-  <input [(ngModel)]="achieveDream" type="text" id="achieve-dream-input">
+  <input [formControl]="achieveDream" type="text" id="achieve-dream-input">
   <h3>
-    Achieve Dream Checkbox {{achieveCheckbox}}
+    Achieve Dream Checkbox {{achieveCheckbox.value}}
   </h3>
-  <input [(ngModel)]="achieveCheckbox" type="checkbox" id="achieve-check-dream-input">
+  <input [formControl]="achieveCheckbox" type="checkbox" id="achieve-check-dream-input">
 </div>

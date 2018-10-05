@@ -1,6 +1,6 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 describe('AppComponent', () => {
   let fixture, compiled, app;
@@ -8,7 +8,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        FormsModule
+        ReactiveFormsModule
       ],
       declarations: [
         AppComponent
@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   }));
 
   it(`should have as title 'my-dream-app'`, async(() => {
-    expect(app.title).toEqual('');
+    expect(app.title.value).toEqual('');
   }));
 
   it('should render title in a h1 tag', async(() => {
